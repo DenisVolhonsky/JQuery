@@ -1,0 +1,12 @@
+* {
+	font-style: 32px;
+	padding: 20px;
+	text-align: center;
+}
+.acc-head {
+	background: orange;
+}
+.acc-body {
+	background: blue;
+	display: none;
+}
