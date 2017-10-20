@@ -1,37 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<span>Введите фамилию</span><input type="text" name="FirstName"><br>
-	<span>Введите имя</span><input type="text" name="LastName"><br>
-	<span>Введите возраст</span><input type="number" id="age"><br>
-	<span>Выбрать пол</span><input type="radio" name="sex" value="Male">Муж<input type="radio" name="sex" value="Female">Жен<br>
-	<span>Выбрать день рождения</span><input type="date" id="date"><br>
-	<span>Выберите кол-во сопровождающих</span><select name="" id="sup"><br>
-	<option value="0">0</option>
-	<option value="1">1</option>
-	<option value="2">2</option>
-	<option value="3">3</option>
-</select><br>
-	<span>Область</span><select name="" id="region"><br>
-	<option value="0">Выберите город</option>
-	<option value="1">Киевская</option>
-	<option value="2">Винницкая</option>
-	<option value="3">Хмельницкая</option>
-</select><br>
-	<span>Введите телефон</span><input type="tel" id="tel"><br>
-	<span>Введите e-mail</span><input type="email" id="mail"><br>
-	<p>Согласиться с условиями:</p>
-	<input type="checkbox" value="1" id="ch1">Да
-	<input type="submit" value="Отправить" id="submit">
+<fieldset>
+    <legend>Заполните форму</legend>
+    <div class="field">
+        <span>Введите фамилию</span>
+        <input type="text" name="FirstName"><br>
+    </div>
+    <div class="field">
+        <span>Введите имя</span>
+        <input type="text" name="LastName"><br>
+    </div>
+    <div class="field">
+        <span>Введите возраст</span>
+        <input type="number" id="age"><br>
+    </div>
+    <div class="field">
+        <span>Выбрать пол</span>
+        <input type="radio" name="sex" value="Male">Муж<input type="radio" name="sex" value="Female">Жен<br>
+    </div>
+    <div class="field">
+        <span>Выбрать день рождения</span><input type="date" id="date"><br>
+    </div>
+    <div class="field">
+        <span>Выберите кол-во сопровождающих</span>
+        <select name="" id="sup"><br>
+            <option value="-1">Сопровождающие</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select><br>
+    </div>
+    <div class="field">
+        <span>Область</span><select name="" id="region">
+            <option value="0">Выберите город</option>
+            <option value="Киевская">Киевская</option>
+            <option value="Винницкая">Винницкая</option>
+            <option value="Хмельницкая">Хмельницкая</option>
+        </select><br>
+    </div>
+    <div class="field">
+        <span>Введите телефон</span>
+        <input type="tel" id="tel"><br>
+    </div>
+    <div class="field">
+        <span>Введите e-mail</span>
+        <input type="email" id="mail"><br>
+    </div>
+    <div class="field">
+        <label for="ch1">Согласиться с условиями:</label>
+        <input type="checkbox" value="1" id="ch1">
+    </div>
+    <input type="submit" value="Отправить" id="submit">
+</fieldset>
 
 
-
-<script src="js/jquery-3.2.1.min.js"></script>	
-<script src="js/script.js"></script>	
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
